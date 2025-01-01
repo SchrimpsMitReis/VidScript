@@ -1,0 +1,24 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <div class="accountHead">
+            <img src={{accountImageUrl}} alt="">
+            <h2>{{accountName}}</h2>
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="person edit"></mat-icon>
+        </div>
+        <mat-list>
+            <mat-list-item >
+                <h3>New Chat</h3>
+                <mat-icon fontIcon="person edit"></mat-icon>
+            </mat-list-item>
+            <mat-list-item role="listitem">Item 2</mat-list-item>
+            <mat-list-item role="listitem">Item 3</mat-list-item>
+        </mat-list>
+    </mat-drawer>
+
+    <div class="example-sidenav-content">
+        <button type="button" mat-button (click)="drawer.toggle()">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon>
+        </button>
+    </div>
+
+</mat-drawer-container>
