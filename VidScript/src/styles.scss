@@ -42,3 +42,8 @@ body {
   margin: 0
   ; font-family: Roboto, "Helvetica Neue", sans-serif; 
 }
+app-root{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}

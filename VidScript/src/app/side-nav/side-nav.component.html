@@ -6,12 +6,9 @@
             <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="person edit"></mat-icon>
         </div>
         <mat-list>
-            <mat-list-item >
-                <h3>New Chat</h3>
-                <mat-icon fontIcon="person edit"></mat-icon>
-            </mat-list-item>
-            <mat-list-item role="listitem">Item 2</mat-list-item>
-            <mat-list-item role="listitem">Item 3</mat-list-item>
+            <mat-list-item [routerLink]="['/']">Landing Page</mat-list-item>
+            <mat-list-item [routerLink]="['/chat']">Chat</mat-list-item>
+            <mat-list-item [routerLink]="['/account']">Account</mat-list-item>
         </mat-list>
     </mat-drawer>
 
@@ -20,5 +17,5 @@
             <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon>
         </button>
     </div>
-
+    
 </mat-drawer-container>
